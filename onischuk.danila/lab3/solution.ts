@@ -1,5 +1,5 @@
 function difference<T>(arr1: T[], arr2: T[]): T[] {
-  let results: T[] = [];
+  const results: T[] = [];
 
   for (const item1 of arr1) {
     let flag: boolean = true;
