@@ -1,16 +1,16 @@
 function difference<T>(arr1: T[], arr2: T[]): T[] {
   let results: T[] = [];
 
-  for (let i of arr1) {
+  for (let item1 of arr1) {
     let flag: boolean = true;
-    for (let j of arr2) {
-      if (i === j) {
+    for (let item2 of arr2) {
+      if (item1 === item2) {
         flag = false;
         break;
       }
     }
     if (flag) {
-      results.push(i);
+      results.push(item1);
     }
   }
 
